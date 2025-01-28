@@ -1,0 +1,7 @@
+:root {
+  --red: #ab2217; /*Use for Buttons */
+  --warmGrey: rgb(114, 108, 108); /*Use for Tables Headings*/
+  --black: black; /* red and black color is being used as linear gradient color in sidebar*/
+  --white: white; /*red and white is being used as linear gradient color in Appbar*/
+  --deepRed: rgb(83 9 9); /*Use for Homepage header and footer*/
+}

@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --red: #ab2217;
+  --white: #fff;
+  --grey: #313131;
+  --gray: #666666;
+  --black: black;
+ }
+
+ .main-container1 {
+  display: flex;
+  /* position:fixed; */
+  box-shadow: 5px grey;
+}
+
+main {
+  padding:50 px;
+} 
+
+.title1 {
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+
+.sidebar1 {
+  background: linear-gradient(91deg, var(--red), var(--black)) ;
+  color: white;
+  /* height: auto; */
+   flex: 0 0 auto;
+}
+
+.top_section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+.logo1 {
+  font-size: 18px;
+  line-height: 0;
+}
+.bars1 {
+  width: 30px;
+}
+.hide1 {
+  display: none;
+}
+
+.search1 {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  height: 30px;
+  padding: 10px;
+}
+.search input {
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  background: rgb(238, 238, 238);
+
+  color: white;
+}
+
+.routes1 {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.link1 {
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  text-decoration: none;
+}
+.link1:hover {
+  color: var(--black);
+  background: white;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.active1 {
+  border-right: 4px solid white;
+
+}
+.link_text1 {
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.menu1 {
+  display: flex;
+  color: white;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  justify-content: space-between;
+}
+.menu_item1 {
+  display: flex;
+  gap: 10px;
+}
+.menu_container1 {
+  display: flex;
+  flex-direction: column;
+}
+.menu_container1 .link1 {
+  padding-left: 20px;
+  border-bottom: #fff 0.5px solid;
+}
+
+
+@media screen and (max-width: 768px) {
+  .main-container1 {
+    flex-direction: row;
+  }
+  .sidebar1 {
+    width: 100%;
+    height: 100%;
+  }
+  .top_section1 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo1 {
+    display: none;
+  }
+  .bars1 {
+    margin-right: 15px;
+  }
+  .search1 {
+    margin-top: 15px;
+  }
+  .routes1 {
+    margin-top: 15px;
+  }
+  .link1 {
+    padding: 10px;
+    justify-content: center;
+  }
+  .link_text1 {
+    display: none;
+  }
+}

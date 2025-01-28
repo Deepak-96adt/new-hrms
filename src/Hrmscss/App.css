@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+AU+SA&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+#svgimg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.Candidate-id {
+  text-decoration: none;
+  color: blue;
+}
+
+.Candidate-id2 {
+  text-decoration: none;
+  color: rgb(51, 51, 56);
+}
+
+.Heading1 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: #d3dace;
+  box-shadow: 5px 5px 5px black;
+  margin: 13px auto;
+  padding: 17px;
+  width: 344px;
+  height: 54px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1200px) {
+  .Heading1 {
+    width: 300px;
+    font-size: 16px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Heading1 {
+    width: 250px;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .leave-card {
+    margin: auto;
+  }
+
+  .leave-icon {
+    font-size: 1.5rem;
+  }
+
+  .leave-title {
+    font-size: 1.2rem;
+  }
+
+  .center-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Heading1 {
+    width: 200px;
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .leave-card {
+    margin: 10px 0;
+  }
+
+  .leave-icon {
+    font-size: 1.2rem;
+  }
+
+  .leave-title {
+    font-size: 1rem;
+  }
+
+  .center-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .Heading1 {
+    width: 100%;
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .leave-card {
+    margin: 10px 0;
+  }
+
+  .leave-icon {
+    font-size: 1rem;
+  }
+
+  .leave-title {
+    font-size: 0.9rem;
+  }
+
+  .center-text {
+    font-size: 0.7rem;
+  }
+}
+/* Ensure this container wraps both sidebar and content */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  min-height: calc(100vh - 60px); /* Adjust based on navbar/footer height */
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px; /* Adjust width as needed */
+  background-color: #333; /* Example background color */
+  color: white;
+  padding: 1rem; /* Padding for sidebar */
+}
+
+/* Content styles */
+.content {
+  flex: 1;
+  padding: 1rem;
+  background-color: #f5f5f5; /* Background color for content area */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 765px) {
+  .main-container {
+    flex-direction: column; /* Stack sidebar and content vertically on small screens */
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+}

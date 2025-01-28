@@ -1,0 +1,114 @@
+.dropdown-menu {
+  background-color: #2b7dd0;
+}
+
+.navbarparent {
+  position: -webkit-sticky !important;
+  position: sticky;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  align-items: center;
+
+
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  margin-right: 1rem;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+
+.dropdown-item {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #dee2e6;
+  color: #007bff;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+
+
+.navbar-nav .active .nav-link {
+  color: #007bff;
+}
+
+.navbar-nav .nav-link.disabled {
+  color: #aaa;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  background-color: #f8f9fa;
+}
+
+.navbar-nav .nav-link:hover,
+.dropdown-item:hover {
+  background-color: #e9ecef;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #f8f9fa !important;
+}
+
+
+
+
+/* / Login and Logout button styles / */
+.navbar .btn-outline-success,
+.navbar .btn-outline-danger {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+/* / Change the color of Login button on hover / */
+.navbar .btn-outline-success:hover {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+/* / Change the color of Logout button on hover / */
+.navbar .btn-outline-danger:hover {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+
+.d-inline-block.align-top {
+  width: 140px;
+  height: 50px;
+}

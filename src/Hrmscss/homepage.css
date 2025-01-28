@@ -1,0 +1,269 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #ab2217; /*Use for Buttons */
+  --warmGrey: rgb(114, 108, 108); /*Use for Tables Headings*/
+  --black: black; /* red and black color is being used as linear gradient color in sidebar*/
+  --white: white; /*red and white is being used as linear gradient color in Appbar*/
+  --deepRed: rgb(83 9 9); /*Use for Homepage header and footer*/
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: #dfdbdb;
+}
+
+#svgimg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.Candidate-id {
+  text-decoration: none;
+  color: blue;
+}
+
+.Candidate-id2 {
+  text-decoration: none;
+  color: rgb(51, 51, 56);
+}
+
+.Heading1 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: #d3dace;
+  box-shadow: 5px 5px 5px black;
+  margin: 13px auto;
+  padding: 17px;
+  width: 344px;
+  height: 54px;
+}
+
+/* Features section */
+.features {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  margin-bottom: 2rem;
+  background-color: var(--warmGrey);
+}
+
+/* Header section styles */
+.header-section {
+  background-color: var(--red);
+  padding: 1rem;
+}
+
+.header-section p {
+  font-size: 1.5rem;
+}
+
+/* Body section styles */
+.body-section {
+  background-color: #d7d7d7;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  padding: 5rem;
+}
+
+.body-section h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.body-section h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.body-section p {
+  font-size: 1.2rem;
+}
+
+/* Footer section styles */
+.footer-section {
+  background-color: var(--warmGrey);
+}
+
+.footer-section p {
+  font-size: 1rem;
+}
+
+/* Card CSS */
+.leave-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.leave-card:hover {
+  transform: translateY(-5px);
+}
+
+.leave-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  background-color: var(--red);
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.leave-icon svg {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.leave-card:hover .leave-icon {
+  transform: scale(1.1);
+  background-color: var(--deepRed);
+}
+
+.leave-card:hover .leave-icon svg {
+  transform: rotate(180deg);
+}
+
+.leave-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--warmGrey);
+}
+
+.leave-text {
+  font-size: 1rem;
+  color: var(--warmGrey);
+  text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .Heading1 {
+    width: 300px;
+    font-size: 16px;
+    padding: 15px;
+  }
+  .features {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .Heading1 {
+    width: 250px;
+    font-size: 14px;
+    padding: 12px;
+  }
+  .features {
+    font-size: 1.8rem;
+  }
+  .leave-card {
+    margin: auto;
+  }
+  .leave-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .leave-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+  .leave-title {
+    font-size: 1rem;
+  }
+  .leave-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Heading1 {
+    width: 200px;
+    font-size: 13px;
+    padding: 10px;
+  }
+  .features {
+    font-size: 1.6rem;
+  }
+  .body-section {
+    padding: 3rem;
+  }
+  .leave-card {
+    margin: 10px 0;
+  }
+  .leave-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .leave-icon svg {
+    width: 25px;
+    height: 25px;
+  }
+  .leave-title {
+    font-size: 0.9rem;
+  }
+  .leave-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .Heading1 {
+    width: 100%;
+    font-size: 12px;
+    padding: 8px;
+  }
+  .features {
+    font-size: 1.4rem;
+  }
+  .body-section {
+    padding: 2rem;
+  }
+  .leave-card {
+    margin: 10px 0;
+  }
+  .leave-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .leave-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .leave-title {
+    font-size: 0.8rem;
+  }
+  .leave-text {
+    font-size: 0.7rem;
+  }
+}

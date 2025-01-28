@@ -1,0 +1,79 @@
+.changepassword-form-container {
+  margin: 50px auto;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+
+.changepassword-form {
+    max-width: 500px;
+    margin: 73px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .changepassword-form label {
+    font-weight: bold;
+  }
+  
+  .changepassword-form input[type="password"] {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+/*   
+  .changepassword-form button[type="submit"] {
+  
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 20px;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.75);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.25), inset 0px -1px 0px rgba(255,255,255,0.1);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  } */
+  
+  .changepassword-form button[type="submit"]:hover {
+     /* background-color: #0069d9; 
+    color: #ffffff; */
+
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.25), inset 0px -1px 0px rgba(255,255,255,0.1);
+  }
+  
+  /* .changepassword-form button[type="submit"]:hover{
+    transform: translateY(0px);
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.25), inset 0px 2px 0px rgba(255,255,255,0.1);
+    background: linear-gradient(180deg, #2a62b1, #4a90e2);
+  } */
+
+
+
+
+  .changepassword-form .alert {
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .changepassword-form .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+  }
+  
+  .changepassword-form .alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+  }
+  
